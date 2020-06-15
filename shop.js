@@ -69,7 +69,7 @@ function searchByKeyword(value) {
                 const copy = template.cloneNode(true);
 
                 copy.querySelector(".oneImage").src = item.image.guid;
-                copy.querySelector("h2").textContent = item.title.rendered;
+                copy.querySelector("h3").textContent = item.title.rendered;
                 copy.querySelector(".price span").textContent = item.price;
 
                 document.querySelector(".searchResultWrapper").appendChild(copy);
